@@ -1,0 +1,20 @@
+Progressive Overload AI
+	Outcomes:
+		increase load and/or volume
+		no change
+		decrease load and/or volume
+
+	Assumptions:
+		adults typically get fatter over time, so bulking in general isn't a great (initial strategy)
+
+	Initial assumption formulas:
+	Maintenance to gain muscle: ~15cals/lb BW
+	Moderate cut: ~17cals/lb BW
+
+	3000 calories (for me) is a good starting point
+
+
+Advanced Lifters:
+	maximize the number of high quality lifts I can get in with ~85-95% of 1rm
+	be conservative with accessory work
+
