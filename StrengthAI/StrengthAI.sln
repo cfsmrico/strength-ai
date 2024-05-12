@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionLevelFiles", "Solut
 		SolutionNotes.txt = SolutionNotes.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrengthAI.Core", "StrengthAI.Core\StrengthAI.Core.csproj", "{C96A2136-FD86-4830-8428-6366FED9A630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrengthAI.Test", "StrengthAI.Test\StrengthAI.Test.csproj", "{B6689D90-37D8-4A3F-85B1-6F94E76E81AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{3495C312-9DAA-463F-A79D-90C6E0B693F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3495C312-9DAA-463F-A79D-90C6E0B693F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3495C312-9DAA-463F-A79D-90C6E0B693F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C96A2136-FD86-4830-8428-6366FED9A630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96A2136-FD86-4830-8428-6366FED9A630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96A2136-FD86-4830-8428-6366FED9A630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96A2136-FD86-4830-8428-6366FED9A630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6689D90-37D8-4A3F-85B1-6F94E76E81AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6689D90-37D8-4A3F-85B1-6F94E76E81AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6689D90-37D8-4A3F-85B1-6F94E76E81AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6689D90-37D8-4A3F-85B1-6F94E76E81AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
