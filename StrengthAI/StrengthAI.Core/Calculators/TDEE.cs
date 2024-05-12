@@ -1,6 +1,8 @@
-﻿
-namespace StrengthAI.Core
+﻿namespace StrengthAI.Core.Calculators
 {
+    /// <summary>
+    /// Total Daily Energy Expenditure Calculator
+    /// </summary>
     public class TDEE
     {
         public enum Unit
@@ -29,11 +31,11 @@ namespace StrengthAI.Core
         {
             public Unit Unit { get; set; }
 
-            public Sex Sex {  get; set; }
-            
+            public Sex Sex { get; set; }
+
             public ushort Age { get; set; }
 
-            public ActivityLevel ActivityLevel {  get; set; }
+            public ActivityLevel ActivityLevel { get; set; }
 
             public double BodyWeight { get; set; }
 
@@ -59,11 +61,11 @@ namespace StrengthAI.Core
 
             if (inputSet.Sex.Equals(Sex.Male))
             {
-                estimate = 88.362 + (13.397 * inputSet.BodyWeight) + (4.799 * inputSet.HeightInCentimeters) - (5.677 * inputSet.Age);
+                estimate = 88.362 + 13.397 * inputSet.BodyWeight + 4.799 * inputSet.HeightInCentimeters - 5.677 * inputSet.Age;
             }
             else
             {
-                estimate = 447.593 + (9.247 * inputSet.BodyWeight) + (3.098 * inputSet.HeightInCentimeters) - (4.33 * inputSet.Age);
+                estimate = 447.593 + 9.247 * inputSet.BodyWeight + 3.098 * inputSet.HeightInCentimeters - 4.33 * inputSet.Age;
             }
 
             return estimate;

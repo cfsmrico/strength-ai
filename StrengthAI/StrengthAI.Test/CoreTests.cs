@@ -1,5 +1,5 @@
-using StrengthAI.Core;
-using static StrengthAI.Core.TDEE;
+using StrengthAI.Core.Calculators;
+using static StrengthAI.Core.Calculators.TDEE;
 
 namespace StrengthAI.Test
 {
