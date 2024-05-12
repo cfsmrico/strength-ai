@@ -22,6 +22,7 @@ namespace StrengthAI.Test
             Assert.IsTrue(output == 3802);
         }
 
+        [TestMethod]
         public void Two()
         {
             var input = new InputSet
@@ -37,6 +38,7 @@ namespace StrengthAI.Test
             Assert.IsTrue(output == 3683);
         }
 
+        [TestMethod]
         public void Three()
         {
             var input = new InputSet

@@ -42,14 +42,31 @@ namespace StrengthAI.Core
             public ushort BodyFatPercentage { get; set; }
         }
 
-        public static ushort GetEstimate(InputSet inputSet)
+        public static double GetEstimate(InputSet inputSet)
         {
             if (inputSet is null)
             {
                 throw new ArgumentNullException(nameof(inputSet));
             }
 
-            return 2500;
+            if (inputSet.Unit == Unit.Imperial)
+            {
+                inputSet.BodyWeight = inputSet.BodyWeight / 2.205;
+                inputSet.Unit = Unit.Metric;
+            }
+
+            double estimate;
+
+            if (inputSet.Sex.Equals(Sex.Male))
+            {
+                estimate = 88.362 + (13.397 * inputSet.BodyWeight) + (4.799 * inputSet.HeightInCentimeters) - (5.677 * inputSet.Age);
+            }
+            else
+            {
+                estimate = 447.593 + (9.247 * inputSet.BodyWeight) + (3.098 * inputSet.HeightInCentimeters) - (4.33 * inputSet.Age);
+            }
+
+            return estimate;
         }
     }
 }
